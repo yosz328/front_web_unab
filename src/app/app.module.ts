@@ -13,6 +13,7 @@ import { MaterialapoyoComponent } from './materialapoyo/materialapoyo.component'
 import { ProfesoresComponent } from './profesores/profesores.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { HttpClientModule } from '@angular/common/http';
 
 	
 
@@ -41,7 +42,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

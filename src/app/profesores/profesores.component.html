@@ -1,3 +1,12 @@
-<p>
-  profesores works!
-</p>
+<body>
+
+<button (click)="get_teachers()">Actualizar Lista</button>
+
+<ul>
+  <li *ngFor="let teacher of teachers " >
+    Docente {{teacher.last_name}},{{teacher.first_name}} ; {{teacher.email}}
+    
+  </li>
+</ul> 
+
+</body>
