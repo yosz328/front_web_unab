@@ -1,3 +1,13 @@
-<p>
-  materialapoyo works!
-</p>
+<body>
+
+    <button (click)="get_materiales()">Actualizar Lista</button>
+    
+    <ul>
+      <li *ngFor="let material of materiales " >
+          <p> {{material.subject}} <a href= "{{material.ffile}}"> Click me To download</a> </p>
+          <br>
+
+      </li>
+    </ul> 
+
+    </body>

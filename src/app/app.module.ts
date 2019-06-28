@@ -14,6 +14,7 @@ import { ProfesoresComponent } from './profesores/profesores.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'
 
 	
 
@@ -44,6 +45,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
     RouterModule.forRoot(routes)
   ],
   providers: [],
